@@ -1,5 +1,5 @@
 .main-screen{
-   &.industry {
+    &.industry {
         background-color: transparent;
         margin-bottom: 165px;
         @media (max-width: 1366px) {
@@ -13,7 +13,7 @@
             width: 100%;
         }
         .main-screen-head {
-            width: 48%;
+            width: 47%;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -31,6 +31,7 @@
             }
         }   
         .main-screen-title {
+            margin-bottom: 0;
             &::after {
                 display: none;                
             }
@@ -47,7 +48,7 @@
                 font-size: rem(32);
             }
         }
-   }    
+    }    
 }
 
 .main-approach {
@@ -55,6 +56,9 @@
         display: flex;
         flex-wrap: wrap;  
         margin-bottom: -70px;
+        @media (max-width: 1366px) {
+            margin-bottom: -46px;
+        }  
         @media (max-width: 1023px) {
             margin-top: 50px;
             margin-bottom: 0;
@@ -65,11 +69,14 @@
         }           
         a {    
             margin-bottom: 70px;
+            @media (max-width: 1366px) {
+                margin-bottom: 46px;
+            }  
             @media (max-width: 1023px) {
                 margin-bottom: 46px;
             }
             &:first-child {
-                margin-right: 90px;
+                margin-right: 80px;
                 @media (max-width: 1680px) {
                     margin-right: 70px;
                 }   
@@ -79,8 +86,12 @@
                 @media (max-width: 1023px) {                    
                     margin-bottom: 80px;                    
                 }
+                @media (max-width: 599px) {
+                    margin-bottom: 46px;
+                }
                 @media (max-width: 576px) {
                     order: 1;
+                    margin-bottom: 80px;
                 }
             }           
         }
@@ -242,10 +253,16 @@
             }
         }
     }
-   .main-col-about-left.industry-img {
+    .ui-btn {
+        padding: 0 60px;
+        @media (max-width: 1366px) {
+            padding: 0 35px;
+        }
+    }
+    .main-col-about-left.industry-img {
         padding-right: 0;
-   }
-   .main-col-about-right.industry-img {
+    }
+    .main-col-about-right.industry-img {
         padding-left: 0;
     }
 }
