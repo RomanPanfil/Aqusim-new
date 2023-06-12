@@ -433,16 +433,17 @@
 
 .main-expertise {
     &-list {
-        font-size: 0;
-        padding-top: 30px;
-        margin-right: -60px;
+        // font-size: 0;
+        // padding-top: 30px;
+        // margin-right: -60px;
+
+        &:last-child {
+            margin-bottom: -24px;
+        }
 
         li {
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 30px;
-            padding-right: 45px;
-            width: 50%;
+            display: block;
+            margin-bottom: 24px;
         }
     }
     &-link {
@@ -458,7 +459,7 @@
             width: 20px;
             height: 20px;
             background: url(../images/svg/expertise-img.svg) center no-repeat;
-            background-size: 20px;
+            background-size: 26px;
         }
     }
 
