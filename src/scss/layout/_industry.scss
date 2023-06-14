@@ -278,3 +278,6 @@
     padding-left: 0;
 }
 
+
+@media (max-width: 1023px) {.about-img {display: block; visibility: visible;}.about-img img {position: static;}}
+@media (max-width: 599px){.about-img{margin-top: -20px;}}

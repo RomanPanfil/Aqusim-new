@@ -199,7 +199,16 @@ function openInlinePopup(popupID) {
       },
       overflowY: "scroll",
       removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
+      mainClass: 'my-mfp-zoom-in',
+      callbacks: {
+        open: function () {
+          document.documentElement.style.overflow = 'hidden'
+        },
+  
+        close: function() {
+          document.documentElement.style.overflow = ''
+        }
+      }
     });
   },301)
 }
@@ -220,7 +229,16 @@ function showPopup(url = 'popups/popup-thanks.html') {
       },
       overflowY: "scroll",
       removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
+      mainClass: 'my-mfp-zoom-in',
+      callbacks: {
+        open: function () {
+          document.documentElement.style.overflow = 'hidden'
+        },
+  
+        close: function() {
+          document.documentElement.style.overflow = ''
+        }
+      }
     });
   },301)
 }
